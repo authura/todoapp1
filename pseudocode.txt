@@ -68,26 +68,26 @@ add load event for window DOM
 
             reset form text field
 
-            add click event for taskEditElement
+        add click event for taskEditElement
 
-                if text inside taskEditElement button says "edit" (case insensitive)
+            if text inside taskEditElement button says "edit" (case insensitive)
 
-                    remove readonly attribute from taskInputElement
+                remove readonly attribute from taskInputElement
 
-                    focus taskInputElement
+                focus taskInputElement
 
-                    change value of taskEditElement to "Save"
+                change value of taskEditElement to "Save"
 
-                else
+            else
 
-                    add readonly attribute to taskInputElement
+                add readonly attribute to taskInputElement
 
-                    change value of taskEditElement to "Edit"
+                change value of taskEditElement to "Edit"
 
             
-            add click event for taskDeleteElement
+        add click event for taskDeleteElement
 
-                    remove taskElement from listElement
+             remove taskElement from listElement
 
 
 
