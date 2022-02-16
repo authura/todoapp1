@@ -21,7 +21,11 @@ window.addEventListener('load', () => {
 
         // If the form is empty
         if (!task) {
+            
+            // add alert popup that says "Please fill out field"
             alert("Please fill out field.");
+
+            // End function
             return;
         }
 
@@ -124,8 +128,8 @@ window.addEventListener('load', () => {
             }
         });
 
-             // Add click event for delete button
-            taskDeleteElement.addEventListener("click", () => {
+         // Add click event for delete button
+        taskDeleteElement.addEventListener("click", () => {
                 
             // remove task element from list element
             listElement.removeChild(taskElement);
