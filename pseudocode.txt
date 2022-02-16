@@ -1,0 +1,93 @@
+add load event for window DOM
+
+    variable form to hold new-task-form id element
+
+    variable input to hold new-task-input id element
+
+    var listElement to hold tasks id element
+
+    add form submit event
+
+        create function with parameter (e)
+
+            prevent page refresh on submit
+
+            assign value of input to var task
+
+            if task has no value(is empty)
+
+                add alert popup that says "Please fill out field."
+
+                end function
+            
+            create a div element and assign to var taskElement
+
+            add taskElement to classList "task"
+
+            create a div element and assign to var taskContentElement
+
+            add taskContentElement to classList "content"
+
+            append child taskContentElement to taskElement
+
+            create input element and assign to var taskInputElement
+
+            add taskInputElement to classList "text"
+
+            set input type to "text"
+
+            append child taskInputElement to taskContentElement
+
+            assign var task to the value of taskInputElement
+
+            set taskInputElement as "readonly"
+
+            create div element and assign to var taskActionsElement
+
+            add taskActionsElement to classList "actions"
+
+            create button and assign to var taskEditElement
+
+            add taskEditElement to classList "edit"
+
+            set taskEditElement text to "Edit"
+
+            create button and assign to var taskDeleteElement
+
+            add taskDeleteElement to classList "delete"
+
+            set taskDeleteElement text to "Del"
+
+            append taskEditElement to taskActionsElement
+
+            append taskDeleteElement to taskActionsElement
+
+            append taskActionsElement to taskElement
+
+            append taskElement to listElement
+
+            reset form text field
+
+            add click event for taskEditElement
+
+                if text inside taskEditElement button says "edit" (case insensitive)
+
+                    remove readonly attribute from taskInputElement
+
+                    focus taskInputElement
+
+                    change value of taskEditElement to "Save"
+
+                else
+
+                    add readonly attribute to taskInputElement
+
+                    change value of taskEditElement to "Edit"
+
+            
+            add click event for taskDeleteElement
+
+                    remove taskElement from listElement
+
+
+
