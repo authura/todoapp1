@@ -14,7 +14,6 @@ window.addEventListener("load", () => {
 
         if (!task) {
             alert("Please fill out field.");
-
             return;
         }
 
@@ -41,7 +40,7 @@ window.addEventListener("load", () => {
 
         const taskEditElement = document.createElement("button");
         taskEditElement.classList.add("edit");
-        taskEditElement.innerHTML = "Edit";
+        taskEditElement.innerHTML = "Edit"
 
         const taskDeleteElement = document.createElement("button");
         taskDeleteElement.classList.add("delete");
@@ -53,20 +52,16 @@ window.addEventListener("load", () => {
 
         taskElement.appendChild(taskActionsElement);
 
-
         listElement.appendChild(taskElement);
-
         form.reset();
 
         taskEditElement.addEventListener("click", () => {
-            if (taskEditElement.innerText.toLowerCase() == "edit") {
+            if (taskEditElement.innerHTML.toLowerCase() == "edit") {
                 taskInputElement.removeAttribute("readonly");
-                taskInputElement.focus();
-                taskEditElement.innerText = "Save";
+                taskEditElement.innerHTML = "Save";
             } else {
                 taskInputElement.setAttribute("readonly", "readonly");
-                taskEditElement.innerText = "Edit";
-            
+                taskEditElement.innerHTML = "Edit";
             }
         });
 
